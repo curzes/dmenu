@@ -4,19 +4,21 @@
 /* -b  option; if 0, dmenu appears at bottom */
 static int topbar = 1;
 
-/* -fn option overrides fonts[0]; default X11 font or font set */
+/* -fn option overrides fonts[0]; default X11 font or font set
+"Source Code Pro:size=10"
+*/
 static const char *fonts[] = {
-	"Source Code Pro:size=10"
+	"ohsnap7x14r:pixelsize=14:antialias=true:autohint=true"
 };
 
 /* -p  option; prompt to the left of input field */
 static const char *prompt = NULL;
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#999999", "#000000" },
-	[SchemeSel] = { "#FFFFFF", "#999999" },
-	[SchemeSelHighlight] = { "#000000", "#FF0000" },
-	[SchemeNormHighlight] = { "#00FF00", "#000000" },
+	[SchemeNorm] = { "#ff0000", "#00ffff" },
+	[SchemeSel] = { "#FFFFFF", "#333333" },
+	[SchemeSelHighlight] = { "#FFFFFF", "#5E375E" },
+	[SchemeNormHighlight] = { "#5E375E", "#000000" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 	[SchemeHp] = { "#bbbbbb", "#333333" }
 };

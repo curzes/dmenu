@@ -27,6 +27,8 @@ static const char *colors[SchemeLast][2] = {
 static unsigned int lines      = 0;
 static unsigned int lineheight = 24; /* -h option; minimum height of a menu line     */
 
+/* static unsigned int hpitems = "brave,keepass,firefox,nautilus"; */
+
 /*
  * Characters not considered part of a word while deleting words
  * for example: " /?\"&[]"

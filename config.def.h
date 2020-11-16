@@ -15,19 +15,17 @@ static const char *fonts[] = {
 static const char *prompt = NULL;
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#ff0000", "#00ffff" },
-	[SchemeSel] = { "#FFFFFF", "#333333" },
-	[SchemeSelHighlight] = { "#FFFFFF", "#5E375E" },
-	[SchemeNormHighlight] = { "#5E375E", "#000000" },
+	[SchemeNorm] = { "#999999", "#000000" },
+	[SchemeSel] = { "#999999", "#333333" },
+	[SchemeSelHighlight] = { "#999999", "#6D2C65" },
+	[SchemeNormHighlight] = { "#6D2C65", "#000000" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 	[SchemeHp] = { "#bbbbbb", "#333333" }
 };
 
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
-static unsigned int lineheight = 24; /* -h option; minimum height of a menu line     */
-
-/* static unsigned int hpitems = "brave,keepass,firefox,nautilus"; */
+static unsigned int lineheight = 24; /* -h option; minimum height of a menu line */
 
 /*
  * Characters not considered part of a word while deleting words

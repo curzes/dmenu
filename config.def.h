@@ -8,7 +8,7 @@ static int topbar = 1;
 "Source Code Pro:size=10"
 */
 static const char *fonts[] = {
-	"ohsnap7x14r:pixelsize=14:antialias=true:autohint=true"
+	"Source Code Pro:pixelsize=13:antialias=true:autohint=true"
 };
 
 /* -p  option; prompt to the left of input field */
